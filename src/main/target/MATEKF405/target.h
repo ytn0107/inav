@@ -53,7 +53,7 @@
 #define SPI3_MISO_PIN   	    PB4
 #define SPI3_MOSI_PIN   	    PB5
 
-#ifdef MATEKF405MINI
+//#ifdef MATEKF405MINI
 // *************** M25P256 flash ********************
 #define USE_FLASHFS
 #define USE_FLASH_M25P16
@@ -61,15 +61,15 @@
 #define M25P16_CS_PIN           PC0
 
 #define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
-#else
+//#else
 // *************** SD Card **************************
-#define USE_SDCARD
-#define USE_SDCARD_SPI
-#define SDCARD_SPI_BUS          BUS_SPI3
-#define SDCARD_CS_PIN           PC1
+//#define USE_SDCARD
+//#define USE_SDCARD_SPI
+//#define SDCARD_SPI_BUS          BUS_SPI3
+//#define SDCARD_CS_PIN           PC1
 
-#define ENABLE_BLACKBOX_LOGGING_ON_SDCARD_BY_DEFAULT
-#endif
+//#define ENABLE_BLACKBOX_LOGGING_ON_SDCARD_BY_DEFAULT
+//#endif
 
 // *************** OSD *****************************
 #define USE_SPI_DEVICE_2
